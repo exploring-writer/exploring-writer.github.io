@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Guidelines | Health & Lifestyle Guide</title>
+    <meta name="description" content="Learn about healthy weight ranges based on height and how to maintain a healthy weight for long-term wellness.">
+    <style>
+        :root {
+            --content-width: min(800px, 90vw);
+            --section-padding: clamp(20px, 5vw, 32px);
+            --heading-size: clamp(1.8em, 5vw, 2.4em);
+            --subheading-size: clamp(1.4em, 4vw, 1.8em);
+            --body-size: clamp(1em, 3vw, 1.1em);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.8;
+            max-width: var(--content-width);
+            margin: 0 auto;
+            padding: clamp(20px, 5vw, 40px) clamp(16px, 3vw, 20px);
+            color: #2c3e50;
+            background-color: #f8fafc;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: var(--section-padding);
+            border-radius: clamp(12px, 3vw, 16px);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        h1 {
+            color: #1a73e8;
+            border-bottom: 2px solid #e8f0fe;
+            padding-bottom: clamp(12px, 3vw, 16px);
+            font-weight: 700;
+            font-size: var(--heading-size);
+            margin-bottom: clamp(24px, 6vw, 40px);
+            letter-spacing: -0.02em;
+        }
+
+        h2 {
+            color: #1a73e8;
+            margin-top: clamp(24px, 6vw, 40px);
+            font-weight: 700;
+            font-size: var(--subheading-size);
+            letter-spacing: -0.01em;
+        }
+
+        h3 {
+            color: #1a73e8;
+            font-weight: 600;
+            font-size: clamp(1.2em, 3.5vw, 1.4em);
+            margin-top: clamp(24px, 5vw, 32px);
+            margin-bottom: clamp(12px, 3vw, 16px);
+        }
+
+        p, li {
+            color: #3c4043;
+            font-size: var(--body-size);
+            line-height: 1.6;
+        }
+
+        ul, ol {
+            padding-left: clamp(16px, 4vw, 24px);
+            margin-bottom: clamp(16px, 4vw, 24px);
+        }
+
+        li {
+            margin-bottom: clamp(8px, 2vw, 12px);
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #1a73e8;
+            text-decoration: none;
+            margin-bottom: 24px;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .info-box {
+            background-color: #e8f0fe;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .bmi-calculator {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .bmi-formula {
+            font-family: monospace;
+            background-color: #e8f0fe;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            line-height: 1.6;
+            white-space: pre-wrap;
+        }
+
+        .important-note {
+            background-color: #fce8e6;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+            border-left: 4px solid #d93025;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #1a1a1a;
+                color: #e0e0e0;
+            }
+            .container {
+                background-color: #2d2d2d;
+                border-color: #3d3d3d;
+            }
+            h1, h2, h3 {
+                color: #64b5f6;
+            }
+            p, li {
+                color: #b0b0b0;
+            }
+            .info-box, .bmi-calculator, .bmi-formula {
+                background-color: #3d3d3d;
+            }
+            .back-link {
+                color: #64b5f6;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="back-link">← Back to Health Guidelines</a>
+            </nav>
+            <article>
+                <h1>Weight Guidelines</h1>
+                <section class="info-box">
+                    <h2>How to calculate your body mass index (BMI)</h2>
+                    <ul>
+                        <li>Your weight in kilograms / [Your height in meters × Your height in meters]</li>
+                        <div class="bmi-formula">
+                            Example for 165 cm and 60 kg:
+                            60 / (1.65 × 1.65) = 22.04
+                        </div>                    </ul>
+                </section>
+
+                <section class="bmi-calculator">
+                    <h2>Healthy weight range</h2>
+                    <p>BMI 18.5-25 is consideredthe lowest health risk range, however, 
+                        <ul>
+                            <li>Individual factors like muscle mass, body composition, ethnicity, and health conditions should be considered.</li>
+                            <li>For example, Korean references set the maximum BMI at 23 instead of 25.</li>
+                            <li>Althought BMI is a good indicator of health risks, it is not the only factor to consider. 
+                                Some doctors consider waist circumference more important than BMI.
+                                Reducing the waist circumference will also lower BMI anyway.</li>
+                            <li>Fitting to the recommended BMI range improves overall health, however, consult healthcare providers for personalized recommendations if you have special health concerns.</li>
+                        </ul>
+                    </p>
+                    <div class="bmi-formula">
+                        Example for 165 cm:
+                        1.65 × 1.65 × 18.5 = 50.3 kg (minimum)
+                        1.65 × 1.65 × 25 = 68 kg (maximum)
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+</body>
+</html> 
