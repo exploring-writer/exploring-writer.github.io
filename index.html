@@ -71,12 +71,11 @@
             --background-dark: #111827;
             --card-bg: #ffffff;
             --card-border: #e5e7eb;
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             --transition: all 0.3s ease;
         }
 
         body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             line-height: 1.7;
             max-width: var(--content-width);
             margin: 0 auto;
@@ -86,10 +85,13 @@
             -webkit-text-size-adjust: 100%;
         }
 
+        h1, h2, h3, .category-title {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
         .container {
             background-color: var(--card-bg);
             padding: var(--section-padding);
-            border-radius: 0;
             transition: var(--transition);
         }
 
@@ -147,7 +149,6 @@
             margin-bottom: clamp(32px, 7vw, 48px);
             padding: var(--section-padding);
             background-color: var(--card-bg);
-            border-radius: 0;
             transition: var(--transition);
         }
 
@@ -166,7 +167,6 @@
         .info-box {
             background-color: #eff6ff;
             padding: 24px;
-            border-radius: 0;
             margin: 24px 0;
             border-left: 4px solid var(--primary-color);
         }
@@ -174,7 +174,6 @@
         .important-note {
             background-color: #fef2f2;
             padding: 24px;
-            border-radius: 0;
             margin: 24px 0;
             border-left: 4px solid #dc2626;
         }
@@ -204,7 +203,6 @@
         .guideline-card {
             background-color: var(--card-bg);
             border: 1px solid var(--card-border);
-            border-radius: 12px;
             padding: 24px;
             transition: var(--transition);
             cursor: pointer;
@@ -219,9 +217,8 @@
         }
 
         .guideline-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.1);
             border-color: var(--primary-light);
+            background-color: #f8fafc;
         }
 
         .guideline-card h3 {
@@ -285,6 +282,7 @@
 
             .guideline-card:hover {
                 border-color: #60a5fa;
+                background-color: #374151;
             }
         }
 
@@ -316,6 +314,32 @@
 
         .disclaimer p {
             margin-bottom: 12px;
+        }
+
+        nav {
+            margin: 24px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 16px;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            background-color: var(--primary-light);
+            color: white;
         }
     </style>
 </head>
@@ -433,23 +457,23 @@
     
                             <h3>Mental Health</h3>
                             <ul>
-                                <li>Mind is part of the body, brain and body interact through chemicals → Will is not free</li>
+                                <li>Mind is part of the body, brain and body interact through chemicals.</li>
                                 <li>Mental health🔄Physical health
                                     <ul>
                                         <li>Ignoring mental health threatens physical health. Mental health is also a consistent health management item.</li>
-                                        <li><strong>Effects of Stress</strong>
+                                        <li>Effects of Stress
                                             <ul>
                                                 <li>Stress → Cortisol decrease → Serotonin secretion inhibition → Depression</li>
                                                 <li>Adrenal glands (organs regulating homeostasis) become exhausted from constant hormone release during stress → Immune decline, fatigue, various burnout symptoms</li>
-                                                <li>Gut and brain are connected: Stress causes gastritis</li>
-                                                <li>Stress lowers pain threshold → Everything hurts</li>
+                                                <li>Gut and brain are connected: Stress causes gastritis for example</li>
+                                                <li>Stress lowers pain threshold → Feel hurts easily</li>
                                             </ul>
                                         </li>
                                     </ul>
                                 </li>
-                                <li>Cognition/Dementia prevention/Memory
+                                <li>Dementia, Memory loss
                                     <ul>
-                                        <li>Must use brain to exercise it</li>
+                                        <li>Brain exercise to imped them</li>
                                     </ul>
                                 </li>
                                 <li>Limit social media</li>
@@ -457,14 +481,10 @@
     
                             <h3>Skin Health</h3>
                             <ul>
-                                <li>Various skin conditions (atopy, eczema, psoriasis, folliculitis, seborrheic dermatitis, lichen, etc.) are inflammatory responses
+                                <li>Common skin conditions (eczema, seborrheic dermatitis, etc) are inflammatory responses
                                     <ul>
                                         <li>May improve when overall health (immunity) improves</li>
-                                        <li>Reduce body inflammation
-                                            <ul>
-                                                <li>Decreases when abdominal fat (waist circumference) decreases</li>
-                                            </ul>
-                                        </li>
+                                        <li>Body inflammation level decreases when abdominal fat (waist circumference) decreases</li>
                                     </ul>
                                 </li>
                             </ul>
