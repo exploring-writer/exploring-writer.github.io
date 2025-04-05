@@ -27,6 +27,15 @@
             border-bottom: 2px solid #e8f0fe;
             padding-bottom: 16px;
         }
+        .section-head {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a73e8;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e8f0fe;
+        }
         .info-box {
             background-color: #e8f0fe;
             padding: 20px;
@@ -68,141 +77,161 @@
     <div class="container">
         <h1>Macronutrient Guidelines</h1>
 
-        <section>
-            <h2>1. Protein (단백질)</h2>
-            <div class="info-box">
+        <p>For more detailed information, please refer to each nutrient's page</p>
+
+        <ul>
+            <li><span class="section-head">Protein</span>
                 <ul>
-                    <li>Energy: 4 kcal/g</li>
-                    <li>Daily target: 70g (20% of 1400 kcal)</li>
-                    <li>Per meal limit: 25-30g (essential amino acids >2.2g)</li>
+                    <li>4 kcal per 1g</li>
+                    <li>Extreme low-protein diet → Various problems. Example: Muscle loss</li>
+                    <li>Extreme high-protein diet → Various problems. Example: Kidney damage, incomplete protein digestion turns into fat</li>
+                    <li>Appropriate amount
+                        <ul>
+                            <li>Common to base on body weight. Also based on calories. There are limits to how much can be absorbed at once. This varies slightly by source. Here's a compilation of various sources.</li>
+                            <li>Based on body weight
+                                <ul>
+                                    <li>(Common source) No problems observed when consuming 0.8 to 2.0 times body weight in grams
+                                        <ul>
+                                            <li>Below 0.8x leads to muscle loss</li>
+                                            <li>No kidney damage observed in experiments up to 2.0x</li>
+                                        </ul>
+                                    </li>
+                                    <li>Various research results
+                                        <ul>
+                                            <li>1-1.2x: Optimal metabolism</li>
+                                            <li>1.2-1.6x: Dieting</li>
+                                            <li>1-1.5x: Optimal muscle synthesis</li>
+                                            <li>2-3.5x: Optimal for exercise (this seems too high... maybe protein supplement sellers...)</li>
+                                        </ul>
+                                    </li>
+                                    <li>Conclusion
+                                        <ul>
+                                            <li>Body weight x [1.0-1.5] somewhere in between?</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Based on calories
+                                <ul>
+                                    <li>Various search results
+                                        <ul>
+                                            <li>15-20% optimal for longevity</li>
+                                            <li>7-20% Korean sources</li>
+                                            <li>10-35% US sources</li>
+                                        </ul>
+                                    </li>
+                                    <li>Common range across sources 15-20%?</li>
+                                </ul>
+                            </li>
+                            <li>Maximum amount absorbed at once (per meal)
+                                <ul>
+                                    <li>25-30g (essential amino acids >2.2g)</li>
+                                </ul>
+                            </li>
+                            <li>Overall appropriate amount
+                                <ul>
+                                    <li>Target weight 55kg, during strength training, 1400 kcal diet
+                                        <ul>
+                                            <li>Calorie-based: 1400 kcal x [15-20%] = 210-280 kcal → 53-70g</li>
+                                            <li>Weight-based: 55kg x [1.0-1.5] = 55-83g</li>
+                                        </ul>
+                                    </li>
+                                    <li>Conclusion: About 70g per day, distributed 20-30g per meal</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-
-            <h3>Optimal Intake Guidelines</h3>
-            <ul>
-                <li>By body weight:
-                    <ul>
-                        <li>Minimum: 0.8g per kg (below this leads to muscle loss)</li>
-                        <li>Optimal metabolism: 1-1.2g per kg</li>
-                        <li>During diet: 1.2-1.6g per kg</li>
-                        <li>Muscle synthesis: 1-1.5g per kg</li>
-                        <li>Safe upper limit: 2.0g per kg (no kidney damage observed)</li>
-                    </ul>
-                </li>
-                <li>By calorie percentage:
-                    <ul>
-                        <li>Optimal longevity: 15-20%</li>
-                        <li>Korean guidelines: 7-20%</li>
-                        <li>US guidelines: 10-35%</li>
-                        <li>Consensus range: 15-20%</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="warning">
-                <h3>Risks of Extreme Diets</h3>
+            </li>
+            
+            <li><span class="section-head">Carbohydrates</span>
                 <ul>
-                    <li>Too low: Muscle loss</li>
-                    <li>Too high: Kidney strain, excess protein converts to fat</li>
+                    <li>4 kcal per 1g</li>
+                    <li>Extreme low-carb diet → Various problems. Example: Early dementia (brain consumes carbs, damaged when deficient)</li>
+                    <li>Extreme high-carb diet → Various problems. Example: Diabetes, early aging</li>
+                    <li>Appropriate amount
+                        <ul>
+                            <li>Slightly varies by source. Generally about 50% of total calories
+                                <ul>
+                                    <li>Korean university hospital data: 55-70%</li>
+                                    <li>US university hospital data: 45-65%</li>
+                                    <li>Some research suggests longest lifespan at about 50% intake</li>
+                                    <li>Middle range of 55-65% should be fine
+                                        <ul>
+                                            <li>For 1400 kcal diet: 770-910 kcal = 192-228g</li>
+                                            <li>Since protein is at higher % range, carbs should be at lower range</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Conclusion: About 200g per day</li>
+                        </ul>
+                    </li>
+                    <li>Sugar (simple sugars, added sugars)
+                        <ul>
+                            <li>Recommended below 10% of daily calories (1400 * 0.1 / 4 = 35g)</li>
+                            <li>Some sources recommend below 25g</li>
+                            <li>Unclear whether based on added sugars (sugar, syrup added to ingredients) or includes naturally occurring sugars</li>
+                            <li>Minimize added sugars, monitor naturally occurring sugars (e.g., fructose in fruits) to stay under 35g</li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
-        </section>
+            </li>
 
-        <section>
-            <h2>2. Carbohydrates (탄수화물)</h2>
-            <div class="info-box">
+            <li><span class="section-head">Fats</span>
                 <ul>
-                    <li>Energy: 4 kcal/g</li>
-                    <li>Daily target: 200g (55% of 1400 kcal)</li>
-                    <li>Sugar limit: <35g per day</li>
+                    <li>9 kcal per 1g</li>
+                    <li>Extreme low-fat diet → Various problems. Example: Brain function decline (brain is mostly fat after water), hair loss</li>
+                    <li>Extreme high-fat diet → Various problems. Example: Atherosclerosis, stroke, various cardiovascular diseases</li>
+                    <li>Appropriate amount
+                        <ul>
+                            <li>Need to track saturated and unsaturated fats separately</li>
+                            <li>Total fat (saturated + unsaturated)
+                                <ul>
+                                    <li>Varies slightly by source
+                                        <ul>
+                                            <li>15-30% or 20-35% of total calories</li>
+                                            <li>Aim for about 20-30% (=280-420kcal), adjust based on remaining calories after carbs and protein</li>
+                                        </ul>
+                                    </li>
+                                    <li>Conclusion: 1400-70*4-200*4 = 320 kcal (23%) → 320/9 = 35.556g</li>
+                                </ul>
+                            </li>
+                            <li>Saturated fats
+                                <ul>
+                                    <li>Solid at room temperature. Makes blood thick and builds up to block blood vessels. Bad for body.</li>
+                                    <li>Less is better. Uncertain if completely avoiding is possible as it's a body component.</li>
+                                    <li>Below 7% or 10% of total calories. Varies by source.</li>
+                                    <li>Let's follow the lower guideline. For 1400 kcal, 7% means below 1400*0.07/9 = 10g</li>
+                                </ul>
+                            </li>
+                            <li>Unsaturated fats
+                                <ul>
+                                    <li>Liquid at room temperature. Unlike saturated fats, helps blood circulation. Essential nutrient.</li>
+                                    <li>Should make up majority of total fat intake</li>
+                                </ul>
+                            </li>
+                            <li>Trans fats
+                                <ul>
+                                    <li>Consume less than 2g. Better to avoid completely. Like garbage. Hard to eliminate from body.</li>
+                                    <li>Surprisingly easy to encounter, be careful with processed foods and eating out. See fat section for details.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
-            </div>
+            </li>
+        </ul>
 
-            <h3>Recommended Ranges</h3>
-            <ul>
-                <li>Korean hospital guidelines: 55-70%</li>
-                <li>US hospital guidelines: 45-65%</li>
-                <li>Longevity studies suggest: ~50%</li>
-                <li>Chosen target: 55% (lower range due to higher protein needs)</li>
-            </ul>
-
-            <div class="warning">
-                <h3>Risks of Extreme Diets</h3>
-                <ul>
-                    <li>Too low: Early onset dementia risk (brain requires carbs)</li>
-                    <li>Too high: Diabetes risk, accelerated aging</li>
-                </ul>
-            </div>
-
-            <h3>Sugar Guidelines</h3>
-            <ul>
-                <li>Limit: <35g per day (10% of daily calories)</li>
-                <li>Some sources recommend <25g</li>
-                <li>Focus on natural sugars (e.g., from fruits) over added sugars</li>
-                <li>Minimize added sugars (syrups, processed sugars)</li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>3. Fats (지방)</h2>
-            <div class="info-box">
-                <ul>
-                    <li>Energy: 9 kcal/g</li>
-                    <li>Daily target: 35g (25% of 1400 kcal)</li>
-                    <li>Saturated fat limit: <11g per day</li>
-                </ul>
-            </div>
-
-            <h3>Fat Types and Guidelines</h3>
-            <ul>
-                <li>Total fat: 20-30% of calories
-                    <ul>
-                        <li>Calculation: (1400 - (70×4) - (200×4)) = 320 kcal</li>
-                        <li>Result: 35g (23% of total calories)</li>
-                    </ul>
-                </li>
-                <li>Saturated fats (solid at room temperature):
-                    <ul>
-                        <li>Limit to <7% of calories (<11g)</li>
-                        <li>Can contribute to blood thickness and vessel blockage</li>
-                    </ul>
-                </li>
-                <li>Unsaturated fats (liquid at room temperature):
-                    <ul>
-                        <li>Essential nutrients</li>
-                        <li>Aids blood circulation</li>
-                        <li>Should make up majority of fat intake</li>
-                    </ul>
-                </li>
-                <li>Trans fats:
-                    <ul>
-                        <li>Limit to <2g (ideally avoid completely)</li>
-                        <li>Common in processed foods and restaurant meals</li>
-                        <li>Difficult for body to process and eliminate</li>
-                    </ul>
-                </li>
-            </ul>
-
-            <div class="warning">
-                <h3>Risks of Extreme Diets</h3>
-                <ul>
-                    <li>Too low: Brain function decline, hair loss (brain is ~60% fat)</li>
-                    <li>Too high: Cardiovascular diseases, atherosclerosis, stroke risk</li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="info-box">
-            <h2>Summary (1400 kcal Diet)</h2>
-            <ul>
-                <li>Carbs: 200g (55%, 800 kcal)</li>
-                <li>Protein: 70g (20%, 280 kcal)</li>
-                <li>Fat: 35g (25%, 320 kcal)</li>
-            </ul>
-            <p><strong>Note:</strong> These are guidelines, not strict rules. Use them to avoid extreme under or over consumption.</p>
-        </div>
+        <h2>Summary</h2>
+        <ul>
+            <li>Carbs: 200g</li>
+            <li>Protein: 70g</li>
+            <li>Fat: 35g</li>
+        </ul>
+        <p>No need to follow strictly like a scale. Use as a guide to prevent extreme under or over consumption.</p>
 
         <a href="index.html" class="back-link">← Back to Health Guidelines</a>
     </div>
 </body>
-</html> 
+</html>

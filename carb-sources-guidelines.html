@@ -27,6 +27,15 @@
             border-bottom: 2px solid #e8f0fe;
             padding-bottom: 16px;
         }
+        .section-head {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a73e8;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e8f0fe;
+        }
         .info-box {
             background-color: #e8f0fe;
             padding: 20px;
@@ -40,12 +49,33 @@
             margin: 20px 0;
             border-left: 4px solid #d93025;
         }
-        .tip-box {
+        .good {
             background-color: #e6f4ea;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
-            border-left: 4px solid #137333;
+            border-left: 4px solid #34a853;
+        }
+        .bad {
+            background-color: #fce8e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #d93025;
+        }
+        .so-so {
+            background-color: #fef7e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f9ab00;
+        }
+        .calculation {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
         }
         ul {
             padding-left: 20px;
@@ -68,171 +98,97 @@
     <div class="container">
         <h1>Carbohydrate Sources Guidelines</h1>
 
-        <section>
-            <h2>Quality Criteria for Carbohydrate Sources</h2>
-            <div class="info-box">
-                <h3>Two Main Factors:</h3>
-                <ol>
-                    <li>Absorption Speed
-                        <ul>
-                            <li>Slower absorption → Less insulin spike → Slower aging</li>
-                            <li>Slower absorption → Better satiety → Less overeating</li>
-                        </ul>
-                    </li>
-                    <li>Micronutrient Content
-                        <ul>
-                            <li>Vitamins and minerals are essential for health</li>
-                            <li>Refined grains have significantly reduced micronutrient content</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section>
-            <h2>Good Sources: Whole Grains (통곡물)</h2>
-            <div class="info-box">
+        <ul>
+            <li><span class="section-head">Criteria for Good and Bad Carbohydrate Sources</span>
                 <ul>
-                    <li>Characteristics:
+                    <li>Is it absorbed slowly?
                         <ul>
-                            <li>Slow absorption rate</li>
-                            <li>Rich in micronutrients</li>
-                            <li>Should form the majority of carbohydrate intake</li>
+                            <li>If absorbed quickly, insulin levels increase significantly → Accelerates aging (total insulin secretion ~ proportional to body age)</li>
+                            <li>If absorbed quickly, you get hungry soon and end up eating more</li>
                         </ul>
                     </li>
-                    <li>Examples:
+                    <li>Amount of micronutrients (vitamins, minerals) consumed together
                         <ul>
-                            <li>Brown rice (현미)</li>
-                            <li>Barley (보리)</li>
-                            <li>Wild rice</li>
-                            <li>Quinoa (퀴노아)</li>
-                            <li>Oats (오트)</li>
-                            <li>Farro (파로)</li>
-                            <li>Whole wheat (통밀)</li>
+                            <li>Refined grains have much fewer micronutrients because the parts with many vitamins/minerals are removed
+                                <ul>
+                                    <li>Many instant noodles and white bread products are fortified with vitamins. Maybe they're worried about malnutrition from eating their products... Anyway, that's how much nutrition is lacking.</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Poor Sources</h2>
-            <div class="warning">
-                <h3>1. Refined Grains (정제곡물)</h3>
+            </li>
+            
+            <li><span class="section-head">Good: Whole Grains</span>
                 <ul>
-                    <li>Characteristics:
+                    <li>Absorbed slowly and rich in micronutrients</li>
+                    <li>It's good to consume most of your carbohydrates from these</li>
+                    <li>Examples: Brown rice, barley, Wild rice, quinoa, oats, farro, whole wheat</li>
+                </ul>
+            </li>
+
+            <li><span class="section-head">Bad: Refined Grains, Added Sugars, or Foods High in Added Sugars</span>
+                <ul>
+                    <li>Absorbed quickly and low or no micronutrients</li>
+                    <li>Refined grains: Grains with the good parts removed
                         <ul>
-                            <li>Rapid absorption</li>
-                            <li>Low in micronutrients (most removed during processing)</li>
-                            <li>Some products are fortified with vitamins due to poor nutritional value</li>
+                            <li>Examples: White rice, white bread, white noodles</li>
                         </ul>
                     </li>
-                    <li>Examples:
+                    <li>Added sugars: Sugars added during cooking, not naturally present in food ingredients. Also called sugar, sweeteners, sugar content, simple sugars, etc.
                         <ul>
-                            <li>White rice (흰쌀)</li>
-                            <li>White bread (흰빵)</li>
-                            <li>White noodles (흰국수)</li>
+                            <li>Examples: Sugar, honey, rice syrup, corn syrup
+                                <ul>
+                                    <li>Worst: Liquid fructose (= crystalline fructose, other fructose, glucose syrup, high fructose corn syrup, corn syrup)
+                                        <ul>
+                                            <li>High fructose corn syrup. Corn is cheap and abundant, so it's inexpensive. Bad for health but that's why it's common in the market.</li>
+                                            <li>Absorbed extremely quickly. Fast track to diabetes.</li>
+                                            <li>In the US, the syrup added to coffee at Starbucks is mostly this, not sure about Korea. That's why I rarely drink sweet coffee.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Examples of foods high in added sugars: Most snacks, candies, ice cream, restaurant foods</li>
                         </ul>
                     </li>
                 </ul>
+            </li>
 
-                <h3>2. Added Sugars (첨가당)</h3>
+            <li><span class="section-head">So So: Fruits</span>
                 <ul>
-                    <li>Basic added sugars:
+                    <li>Fruits are rich in micronutrients and high in fiber, so sugar absorption is slower than with refined sugar</li>
+                    <li>However, the sugar in fruits (fructose) itself is a simple sugar, so eating too much is not good</li>
+                    <li>Eating fruit instead of snacks when craving sweets is good. However, due to fructose, it's better to limit fruits less than 100-200g per day.</li>
+                </ul>
+            </li>
+
+            <li><span class="section-head">Sugar Substitutes</span>
+                <ul>
+                    <li>Made so it doesn't get absorbed, so it probably doesn't accumulate in the body</li>
+                    <li>If not digested and eaten in large amounts, causes diarrhea</li>
+                    <li>Some say it increases appetite, but I'm not sure</li>
+                    <li>Nothing good about eating a lot, but better than eating sugar</li>
+                    <li>Examples
                         <ul>
-                            <li>Sugar (설탕)</li>
-                            <li>Honey (꿀)</li>
-                            <li>Rice syrup (조청)</li>
-                            <li>Corn syrup (물엿)</li>
-                        </ul>
-                    </li>
-                    <li>Worst option - High Fructose Corn Syrup:
-                        <ul>
-                            <li>Names: 액상과당, 결정과당, 포도당 시럽, 고과당 옥수수 시럽, 콘시럽</li>
-                            <li>Very rapid absorption → Direct path to diabetes</li>
-                            <li>Common in processed foods and some coffee syrups</li>
-                        </ul>
-                    </li>
-                    <li>Common sources:
-                        <ul>
-                            <li>Most snacks</li>
-                            <li>Candies</li>
-                            <li>Ice cream</li>
-                            <li>Many restaurant foods</li>
+                            <li>Tasty ones: Allulose, monk fruit (luo han guo), erythritol</li>
+                            <li>Not tasty: Stevia</li>
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </li>
 
-        <section>
-            <h2>Moderate Sources: Fruits</h2>
-            <div class="info-box">
+            <li><span class="section-head">My Consumption Tips</span>
                 <ul>
-                    <li>Pros:
+                    <li>Mix whole grains + beans to make 2 weeks worth of rice → portion into rice bowls and freeze → thaw in refrigerator the day before → microwave for 1 minute 30 seconds
                         <ul>
-                            <li>Rich in micronutrients</li>
-                            <li>High in fiber (slows sugar absorption)</li>
-                            <li>Better alternative to snacks when craving sweets</li>
-                        </ul>
-                    </li>
-                    <li>Cons:
-                        <ul>
-                            <li>Contains simple sugars (fructose)</li>
-                        </ul>
-                    </li>
-                    <li>Recommendation:
-                        <ul>
-                            <li>Limit to 100-200g per day</li>
+                            <li>This saves time & makes portion control easier</li>
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Sugar Alternatives</h2>
-            <div class="info-box">
-                <ul>
-                    <li>Characteristics:
-                        <ul>
-                            <li>Not absorbed by body</li>
-                            <li>No caloric accumulation</li>
-                            <li>May cause diarrhea if consumed in excess</li>
-                            <li>Some debate about appetite effects</li>
-                            <li>Better than sugar, but moderation still important</li>
-                        </ul>
-                    </li>
-                    <li>Good-tasting options:
-                        <ul>
-                            <li>Allulose (알룰로스)</li>
-                            <li>Monk fruit (나한과)</li>
-                            <li>Erythritol (에리스리톨)</li>
-                        </ul>
-                    </li>
-                    <li>Less palatable:
-                        <ul>
-                            <li>Stevia (스테비아)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="tip-box">
-            <h2>Practical Tips</h2>
-            <h3>Efficient Meal Prep Method:</h3>
-            <ol>
-                <li>Prepare 2 weeks worth of mixed grains and beans</li>
-                <li>Portion into single-serving containers</li>
-                <li>Freeze portions</li>
-                <li>Night before: Move portion to refrigerator to thaw</li>
-                <li>Heat in microwave for 1:30 when ready to eat</li>
-            </ol>
-            <p><strong>Benefits:</strong> Time-saving and portion control</p>
-        </div>
+            </li>
+        </ul>
 
         <a href="index.html" class="back-link">← Back to Health Guidelines</a>
     </div>
 </body>
-</html> 
+</html>

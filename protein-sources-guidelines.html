@@ -27,6 +27,15 @@
             border-bottom: 2px solid #e8f0fe;
             padding-bottom: 16px;
         }
+        .section-head {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1a73e8;
+            margin-top: 24px;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e8f0fe;
+        }
         .info-box {
             background-color: #e8f0fe;
             padding: 20px;
@@ -40,12 +49,33 @@
             margin: 20px 0;
             border-left: 4px solid #d93025;
         }
-        .tip-box {
+        .good {
             background-color: #e6f4ea;
             padding: 20px;
             border-radius: 8px;
             margin: 20px 0;
-            border-left: 4px solid #137333;
+            border-left: 4px solid #34a853;
+        }
+        .bad {
+            background-color: #fce8e6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #d93025;
+        }
+        .so-so {
+            background-color: #fef7e0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #f9ab00;
+        }
+        .calculation {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-family: monospace;
         }
         ul {
             padding-left: 20px;
@@ -62,213 +92,118 @@
         .back-link:hover {
             text-decoration: underline;
         }
-        .source-ranking {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            margin: 20px 0;
-            padding: 16px;
-            background: #f8f9fa;
-            border-radius: 8px;
-            overflow-x: auto;
-        }
-        .source-item {
-            padding: 8px 16px;
-            background: white;
-            border: 1px solid #e8f0fe;
-            border-radius: 4px;
-            white-space: nowrap;
-        }
-        .arrow {
-            color: #1a73e8;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Protein Sources Guidelines</h1>
 
-        <section>
-            <h2>Quality Criteria for Protein Sources</h2>
-            <div class="info-box">
-                <h3>Three Main Factors:</h3>
-                <ol>
-                    <li>Fat Content
-                        <ul>
-                            <li>Consider saturated fat content when meeting protein requirements</li>
-                            <li>Some sources (like red meat) come with high saturated fat</li>
-                            <li>Better sources have healthy fats (e.g., omega-3 in fish)</li>
-                        </ul>
-                    </li>
-                    <li>Complete Protein Status
-                        <ul>
-                            <li>Complete proteins contain all 20 essential amino acids</li>
-                            <li>Animal sources: All are complete proteins</li>
-                            <li>Plant sources: Most are incomplete, but some exceptions exist</li>
-                        </ul>
-                    </li>
-                    <li>Environmental Impact
-                        <ul>
-                            <li>Livestock industry is a major contributor to climate change</li>
-                            <li>Reducing meat consumption has more impact than many other eco-friendly actions</li>
-                        </ul>
-                    </li>
-                </ol>
-            </div>
-        </section>
-
-        <section>
-            <h2>Protein Source Rankings</h2>
-            <div class="source-ranking">
-                <span class="source-item">Plant Proteins</span>
-                <span class="arrow">></span>
-                <span class="source-item">Fish</span>
-                <span class="arrow">=</span>
-                <span class="source-item">Poultry</span>
-                <span class="arrow">></span>
-                <span class="source-item">Dairy</span>
-                <span class="arrow">>></span>
-                <span class="source-item">Pork</span>
-                <span class="arrow">></span>
-                <span class="source-item">Beef/Lamb</span>
-                <span class="arrow">></span>
-                <span class="source-item">Processed Meat</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Best Sources: Plant Proteins</h2>
-            <div class="info-box">
-                <h3>Plant-Based Proteins (식물성 단백질)</h3>
+        <ul>
+            <li><span class="section-head">Criteria for Good and Bad Protein Sources</span>
                 <ul>
-                    <li>Benefits:
+                    <li>Does it contain a lot of fat?
                         <ul>
-                            <li>Best protein value for health</li>
-                            <li>Rich in micronutrients and fiber</li>
-                            <li>Lowest environmental impact</li>
-                            <li>Contains healthy fats</li>
-                            <li>Good absorption rate</li>
+                            <li>Consider whether meeting protein requirements might lead to excessive saturated fat intake</li>
                         </ul>
                     </li>
-                    <li>Complete protein sources:
+                    <li>Complete protein
                         <ul>
-                            <li>Tofu (두부)</li>
-                            <li>Quinoa (퀴노아)</li>
+                            <li>Definition: A protein source that contains all 20 essential amino acids (amino acids that the body needs but cannot produce on its own, so they must be supplied externally)</li>
+                            <li>Animal protein sources (meat, fish, eggs, yogurt) are complete proteins</li>
+                            <li>Plant protein sources (soybeans, rice) are not complete proteins. The ratio of essential amino acids is also lower in the total protein.
+                                <ul>
+                                    <li>Soybeans + rice together form a complete protein.</li>
+                                    <li>While the ratio of essential amino acids is lower than animal proteins, absorption rate is higher</li>
+                                </ul>
+                            </li>
+                            <li>Tofu and quinoa are rare examples of plant-based complete proteins</li>
+                            <li>For plant proteins, you need to consume 10% more than when eating only animal proteins</li>
+                            <li>Side effects of excessive animal protein intake are said to be less (or not) present with excessive plant protein intake</li>
                         </ul>
                     </li>
-                    <li>Complementary proteins:
+                    <li>Climate change
                         <ul>
-                            <li>Rice + Beans = Complete protein</li>
-                            <li>Need 10% more intake compared to animal proteins</li>
+                            <li>The livestock industry is the main culprit of climate change. Not eating meat helps much more than saving on other things.</li>
+                            <li>Especially beef and lamb are the worst</li>
+                        </ul>
+                    </li>
+                    <li>So how to calculate?
+                        <ul>
+                            <li>You can rank based on the following criteria per 25g of protein (per meal). Coincidentally, the rankings of both are similar.</li>
+                                <ul>
+                                    <li>Amount of fat included</li>
+                                    <li>Amount of greenhouse gases emitted</li>
+                                </ul>
                         </ul>
                     </li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Good Sources: Fish and Poultry</h2>
-            <div class="info-box">
-                <h3>1. Fish (생선)</h3>
+            </li>
+            
+            <li><span class="section-head">Good Order</span>
                 <ul>
-                    <li>Benefits:
+                    <li>Plants (tofu, soybeans) > fish, poultry > dairy > pork > beef, lamb > processed meats
                         <ul>
-                            <li>Contains healthy omega-3 fats</li>
-                            <li>Note: Omega-3 supplements don't show the same health benefits</li>
-                        </ul>
-                    </li>
-                    <li>Recommendations:
-                        <ul>
-                            <li>2-3 servings of small fish per week</li>
-                            <li>Best choices (low heavy metal content):
+                            <li>Plant protein
                                 <ul>
-                                    <li>Anchovies (멸치)</li>
-                                    <li>Mackerel (고등어) - Korean/Norwegian</li>
-                                    <li>Other small fish lower in food chain</li>
+                                    <li>Best protein value for money</li>
+                                    <li>Rich in healthy micronutrients, fiber, etc.</li>
+                                    <li>Least impact on climate change</li>
+                                    <li>Contains healthy fats</li>
+                                    <li>Well absorbed</li>
+                                </ul>
+                            </li>
+                            <li>Fish
+                                <ul>
+                                    <li>Contains healthy fats, especially omega-3
+                                        <ul>
+                                            <li>Experimental results show that taking omega-3 in pill form instead of from fish has no health benefits. There are several theories about this.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Recommendation: Consuming small fish (anchovies, Korean/Norwegian mackerel, etc., small-sized fish lower in the food chain with less heavy metal accumulation) 2-3 times a week provides the necessary omega-3 intake.</li>
+                                </ul>
+                            </li>
+                            <li>Poultry
+                                <ul>
+                                    <li>Almost no saturated fat. It's better not to eat the skin.</li>
+                                </ul>
+                            </li>
+                            <li>Dairy
+                                <ul>
+                                    <li>Eaten for calcium, but if possible, yogurt (fermented, good for gut) is better than milk</li>
+                                </ul>
+                            </li>
+                            <li>Red meat (beef, lamb, pork, processed meats, etc.)
+                                <ul>
+                                    <li>For health & extinction concerns, it's better to eat as little as possible...</li>
                                 </ul>
                             </li>
                         </ul>
                     </li>
                 </ul>
+            </li>
 
-                <h3>2. Poultry (가금류)</h3>
+            <li><span class="section-head">My Consumption Tips</span>
                 <ul>
-                    <li>Benefits:
+                    <li>Fish 2-3 times a week
                         <ul>
-                            <li>Very low in saturated fat (without skin)</li>
-                            <li>Complete protein source</li>
-                            <li>Lower environmental impact than red meat</li>
+                            <li>Mainly mackerel</li>
+                            <li>Occasionally sashimi, other seafood</li>
                         </ul>
                     </li>
+                    <li>Increase plant ratio
+                        <ul>
+                            <li>About 3 times a week, half a block of tofu + one egg per meal</li>
+                            <li>Add beans when cooking rice</li>
+                        </ul>
+                    </li>
+                    <li>Yogurt snack daily</li>
+                    <li>Half a chicken breast + lentils instead of a whole chicken breast</li>
+                    <li>Chickpea snacks</li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Moderate Sources: Dairy</h2>
-            <div class="info-box">
-                <ul>
-                    <li>Benefits:
-                        <ul>
-                            <li>Good source of calcium</li>
-                            <li>Complete protein</li>
-                        </ul>
-                    </li>
-                    <li>Recommendations:
-                        <ul>
-                            <li>Prefer yogurt over milk (fermented, better for gut health)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Limited Sources: Red and Processed Meats</h2>
-            <div class="warning">
-                <h3>Red Meat (적색육) and Processed Meats (가공육)</h3>
-                <ul>
-                    <li>Concerns:
-                        <ul>
-                            <li>High in saturated fat</li>
-                            <li>Highest environmental impact</li>
-                            <li>Beef and lamb have highest carbon emissions</li>
-                        </ul>
-                    </li>
-                    <li>Recommendation:
-                        <ul>
-                            <li>Minimize consumption for both health and environmental reasons</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <div class="tip-box">
-            <h2>Practical Tips</h2>
-            <h3>Daily Protein Optimization:</h3>
-            <ul>
-                <li>Fish consumption:
-                    <ul>
-                        <li>2-3 times per week (mainly mackerel)</li>
-                        <li>Occasional sashimi and seafood</li>
-                    </ul>
-                </li>
-                <li>Increase plant protein:
-                    <ul>
-                        <li>3 times per week: Half block tofu + 1 egg</li>
-                        <li>Add beans to rice</li>
-                    </ul>
-                </li>
-                <li>Daily yogurt as snack</li>
-                <li>Replace full chicken breast with half + lentils</li>
-                <li>Chickpeas as snacks</li>
-            </ul>
-            <p><strong>Per meal guideline:</strong> 25g protein with minimal saturated fat and environmental impact</p>
-        </div>
+            </li>
+        </ul>
 
         <a href="index.html" class="back-link">← Back to Health Guidelines</a>
     </div>
 </body>
-</html> 
+</html>
